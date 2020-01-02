@@ -1,5 +1,5 @@
 <?php
-echo "<center>Lab04 - Terraform Commit4: "; echo gethostname(); echo "</center>";
+echo "<center>Lab04 - Terraform Commit5: "; echo gethostname(); echo "</center>";
 require 'db_connection.php';
 // function for getting data from database
 function get_all_data($conn){
