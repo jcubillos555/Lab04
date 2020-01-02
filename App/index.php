@@ -1,5 +1,5 @@
 <?php
-echo "<center>Lab04 - Terraform Commit9: "; echo gethostname(); echo "</center>";
+echo "<center>Lab04 - Terraform Commit16: "; echo gethostname(); echo "</center>";
 require 'db_connection.php';
 // function for getting data from database
 function get_all_data($conn){
@@ -63,6 +63,6 @@ function get_all_data($conn){
         ?>
         <!-- END OF SHOW DATA SECTION -->
     </div>
-</body>git s
+</body>
 
 </html>
