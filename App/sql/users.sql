@@ -17,10 +17,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `user_email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL, UNIQUE KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---ALTER TABLE `users`
---  ADD PRIMARY KEY (`id`),
---  ADD  UNIQUE KEY `user_email` (`user_email`);
-
 ALTER TABLE `users`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
