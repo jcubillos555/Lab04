@@ -2,9 +2,18 @@
 provider "azurerm" {
     version = ">=1.39"  
     subscription_id = var.azure_subscription_id
-    tenant_id       = var.azure_tenant_id
+    tenant_id       = var.azure_tenant_id 
 }
 
+
+terraform {
+  required_version = ">= 0.11"
+  backend "azurerm" {
+    storage_account_name = "sclab05"
+    container_name        = "prueba"
+    key                   = "terraform.tfstate"
+  }
+}
 # Create a resource group if it doesn’t exist
 resource "azurerm_resource_group" "myterraformgroup" {
     name     = var.azure_resource_group
