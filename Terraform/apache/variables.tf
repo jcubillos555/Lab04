@@ -53,5 +53,5 @@ variable "admin_username" {
 
 variable "admin_password" {  
   type     = string
-  default  = "Proviteq.1999"
+ default  = "Proviteq.1999"
 }
