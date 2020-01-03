@@ -9,8 +9,9 @@ provider "azurerm" {
 terraform {
   required_version = ">= 0.11"
   backend "azurerm" {
+    resource_group_name = "lab05"
     storage_account_name = "sclab05"
-    container_name        = "prueba"
+    container_name        = "stateterraform"
     key                   = "terraform.tfstate"
   }
 }
