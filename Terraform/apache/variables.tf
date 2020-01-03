@@ -23,22 +23,22 @@ variable "azure_location" {
 
 variable "azure_resource_group" {  
   type    = string
-  default = "lab05"
+  default = "lab04"
 }
 
 variable "azure_vnet" {  
   type    = string
-  default = "lab05_vnet_web"
+  default = "lab04_vnet_web"
 }
 
 variable "azure_dns" {  
   type    = string
-  default = "weblab05"
+  default = "weblab04"
 }
 
 variable "azure_dns_bd" {  
   type    = string
-  default = "bdlab05"
+  default = "bdlab04"
 }
 
 variable "azure_sizevm" {  
